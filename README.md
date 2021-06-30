@@ -135,15 +135,11 @@ Firma software’owa prowadzi projekty w różnych językach programowania. Plik
 - Metod sorted(…) lub filtered(…) użyć w oprogramowaniu innych, odpowiednich, metod klasy. Mają one jednak ogólniejsze znaczenia, bo mogą być używane dla dowolnych innych map z warunkami sortowania czy filtrowania, zadawanymi przez własściwe w danych przypadkach lambdy.
 Programmers.tsv:
 
-`Groovy	Z	Y	X	D
-
-Java	V	B	C	D	A	Z
-
-C++	G	J	H
-
-C#	P	S	Q	V	D
-
-Scala	A	D	A`
+    Groovy	Z	Y	X	D
+    Java	V	B	C	D	A	Z
+    C++	G	J	H
+    C#	P	S	Q	V	D
+    Scala	A	D	A
     
 Uwagi:
 
