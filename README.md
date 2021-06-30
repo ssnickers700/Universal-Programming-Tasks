@@ -245,7 +245,9 @@ Napisać aplikację, która:
 
 W ramach projektu Stworzyć klasy TravelData i Database.
 W klasie TravelData zdefiniowac metodę:
+
  `List<String> travelData.getOffersDescriptionsList(String loc, String dateFormat)`
+ 
 która zwraca listę napisów, każdy z których jest opisem jednej oferty z plików katalogu data, przedstawionym zgodnie z regułami i w języku lokalizacji loc i przy podanym formacie daty (możliwe formaty określa klasa SimpleDateFormat).
 
 W klasie Database zapewnić utworzenie bazy danych i wpisanie do niej wszystkich ofert, wczytanych z plików (metoda createDb()) oraz otwarcie GUI z tabelą, pokazującą wczytane oferty.
