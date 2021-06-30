@@ -2,7 +2,7 @@
 
 Universal Programming Techniques - university tasks concerning java 8 features: streams, lambda expressions, functional interfaces as also generics, jdbc
 
-### Tasks
+## Tasks
 
 ### UTP1
 
@@ -148,4 +148,86 @@ Programmers.tsv:
 Uwagi:
 
 zgodność informacji wyjściowej z oczekiwanym wynikiem (w tym kolejność pokazywania danych) jest istotna – wynika z zastosowania odpowiednich map i innych klas kolekcyjnych. Uniwersalność metod sorted i filtered (możliwość ich zastosowania dla innych niż w zadaniu map).W klasie ProgLang nie wolno używac surowych typów.
+
+### UTP4
+
+**Zad 1/Zad 2**
+
+Zadanie 'FileVisitor':
+
+Katalog {user.home}/UTP6dir zawiera pliki tekstowe (z rozszerzeniem .txt) umieszczone w różnych podkatalogach. Kodowanie plików to Cp1250. Przeglądając rekursywnie drzewo katalogowe, zaczynające się od {user.home}/UTP6dir, wczytać wszystkie te pliki. i połączoną ich zawartość zapisać do pliku o nazwie UTP6res.txt, znadującym się w katalogu projektu. Kodowanie pliku UTP6res.txt winno być UTF-8.
+
+Uwagi:
+
+- trzeba dostarczyć definicji klasy Futil,
+- należy zastosować FileVisitor do przeglądania katalogu,
+- nalezy zalożyć, że na starcie programu wynikowego pliku nie ma.
+
+**Zad 3**
+
+Zadanie:
+
+Na liście słów z Wiki link znaleźć wszystkie anagramy. Wypisać słowa z maksymalną liczbą anagramów oraz wszystkie ich anagramy w postaci:
+
+    slowo anagram1 anagram2 ....
+Program ma być bardzo krótki , dzięki zastosowaniu przetwarzania strumieniowego (java.util.stream).
+
+### UTP5
+
+**Zad 1**
+
+Uruchamianie i zatrzymywanie równoległego działania kodów
+
+Zbudować klasę StringTask, symulująca długotrwałe obliczenia, tu polegające na konkatenacji napisow.
+Konstruktor klasy otrzymuje jako argument napis do powielenia oraz liczbę oznaczającą ile razy ten napis ma być powielony.
+Klasa winna implementować interfejs Runnable, a w jej metodzie run() wykonywane jest powielenia napisu. Użycie '+' jest warunkiem obowiązkowym.
+
+Obiekt klasy StringTask traktujemy jako zadanie, które może się wykonywać równolegle z innymi.
+Możliwe stany zadania to:
+- CREATED  - zadanie utworzone, ale nie zaczęło się jeszcze wykonywać,
+- RUNNING - zadanie się wykonuje w odrebnym wątku
+- ABORTED - wykonanie zadania zostało przerwane
+- READY - zadanie zakończyło się pomyślnie i sa gotowe wyniki.
+W klasie StringTask zdefiniować metody:
+  - public String getResult()  - zwracającą wynik konkatenacji
+  - public TaskState getState()  - zwracającą stan zadania
+  - public void start() - uruchamiającą zadanie w odrębnym watku
+  - public void abort() - przerywającą wykonanie kodzu zadania i działanie watku
+  - public boolean isDone()  - zwracająca true, jeśli wykonanie zadania się zakończyło normalnie lub przez przerwanie, false w przeciwnym razie
+
+**Zad 2**
+
+Napisać program, w którym uruchamiane zadania pokazywane są na liście javax.swing.JList. Zadania z listy możemy odpytywac o ich stan, anulować, pokazywac ich wyniki, gdy są gotowe itp.
+
+**Zad 3**
+
+Kod, działający w wątku A czyta z pliku ../Towary.txt informacje o towarach w postaci:
+
+id_towaru waga 
+
+tworzy obiekty klasy Towar, zawierające przeczytane informacje oraz wyprowadza na konsolę informacje o liczbie utworzonych  obiektów. Informacja ma być wyprowadzana co 200 obiektów w postaci:
+
+    utworzono 200 obiektów
+    utworzono 400 obiektów
+    utworzono 600 obiektów
+    itd.
+
+Kod działający równolegle w innym wątku (B) sięga po te obiekty, sumuje wagę  towarów i  wyprowadza na konsolę informację o przeprowadzonym sumowaniu co 100 obiektów np.:
+
+    policzono wage 100 towarów
+    policzono wage 200 towarów
+    policzono wage 300 towarów
+    itd.
+
+Na końcu podaje sumaryczną wagę wszystkich towarów.
+
+
+
+
+
+
+
+
+
+
 
