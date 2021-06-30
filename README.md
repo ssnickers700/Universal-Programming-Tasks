@@ -52,27 +52,27 @@ Lista dest zawiera informacje o cenach przelotów w postaci napisów:
 port_wylotu port_przylotu cena_w_EUR
 Należy utworzyć listę wynikową, której elementy będą opisywać ceny przelotów do poszczególnych miejsc (tylko) z Warszawy w PLN i wypisać na konsoli jej kolejne elementy, używając następującego programu:
 
-`public class Main {
+    public class Main {
 
-  public static void main(String[] args) {
-    // Lista destynacji: port_wylotu port_przylotu cena_EUR 
-    List<String> dest = Arrays.asList(
-      "bleble bleble 2000",
-      "WAW HAV 1200",
-      "xxx yyy 789",
-      "WAW DPS 2000",
-      "WAW HKT 1000"
-    );
-    double ratePLNvsEUR = 4.30;
-    List<String> result = 
-    /*<-- tu należy dopisać fragment
-     * przy czym nie wolno używać żadnych własnych klas, jak np. ListCreator
-     * ani też żadnych własnych interfejsów
-     */
+    public static void main(String[] args) {
+        // Lista destynacji: port_wylotu port_przylotu cena_EUR 
+        List<String> dest = Arrays.asList(
+        "bleble bleble 2000",
+        "WAW HAV 1200",
+        "xxx yyy 789",
+        "WAW DPS 2000",
+        "WAW HKT 1000"
+        );
+        double ratePLNvsEUR = 4.30;
+        List<String> result = 
+        /*<-- tu należy dopisać fragment
+        * przy czym nie wolno używać żadnych własnych klas, jak np. ListCreator
+        * ani też żadnych własnych interfejsów
+        */
 
-    for (String r : result) System.out.println(r);
-  }
-}`
+        for (String r : result) System.out.println(r);
+        }
+    }
 Program ma wyprowadzić na konsolę:
 
     to HAV - price in PLN: 5160
