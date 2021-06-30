@@ -4,7 +4,7 @@ Universal Programming Techniques - university tasks concerning java 8 features: 
 
 ### Tasks
 
-#### UTP1
+### UTP1
 
 **Zad 1**
 
@@ -79,7 +79,7 @@ Program ma wyprowadzić na konsolę:
     to DPS - price in PLN: 8600
     to HKT - price in PLN: 4300
     
-#### UTP2
+### UTP2
 
 **Zad 2**
 
@@ -96,7 +96,7 @@ Obiekty typu Maybe zawierają jakąś wartość lub są puste (nigdy nie powinny
 - T orElse(T defVal) - zwraca zawartość obiektu Maybe lub domyślną wartosć defVal, jeśli obiekt Maybe jest pusty.
 - Maybe filter(Predicate pred) - zwraca to Maybe, jeśli spełniony jest warunek pred lub to Maybe jest puste; zwraca puste Maybe, jeśli warunek pred jest niespełniony.
 
-#### UTP3
+### UTP3
 
 **Zad 1**
 
