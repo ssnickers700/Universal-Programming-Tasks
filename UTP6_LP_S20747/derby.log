@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jun 05 20:06:36 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0179-dd5a-f5b0-0000072076d0 
+on database directory C:\Users\DOM\Documents\IdeaProjects\UTP\UTP6_LP_S20747\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/DOM/Documents/IdeaProjects/UTP/UTP6_LP_S20747/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=13+33
+user.dir=C:\Users\DOM\Documents\IdeaProjects\UTP\UTP6_LP_S20747
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
