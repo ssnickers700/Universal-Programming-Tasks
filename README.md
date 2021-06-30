@@ -136,9 +136,13 @@ Firma software’owa prowadzi projekty w różnych językach programowania. Plik
 Programmers.tsv:
 
     Groovy	Z	Y	X	D
+    
     Java	V	B	C	D	A	Z
+    
     C++	G	J	H
+    
     C#	P	S	Q	V	D
+    
     Scala	A	D	A
     
 Uwagi:
