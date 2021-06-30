@@ -1,6 +1,6 @@
 # Universal-Programming-Tasks
 
-Universal Programming Techniques - university tasks concerning java 8 features: streams, lambda expressions, functional interfaces as also generics, jdbc
+Universal Programming Techniques - university tasks concerning java 8 features: streams, lambda expressions, functional interfaces as also generics and jdbc
 
 ## Tasks
 
