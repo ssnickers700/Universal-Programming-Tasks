@@ -105,7 +105,7 @@ Stworzyć klasę XList, dostarczającą dodatkowych możliwości tworzenia list 
 Dodatkowo pomocnicze metody do tworzenia xlist z napisów:
 
 - ofChars(napis) - zwraca x-listę znaków napisu,
-- ofTokens(napis, [ sep ]) - zwraca x-listę symboli napisu, rozdzielonych separatorami z sep (jesśi brak - to białymi znakami).
+- ofTokens(napis, [ sep ]) - zwraca x-listę symboli napisu, rozdzielonych separatorami z sep (jeśli brak - to białymi znakami).
 
 Oprócz tego dostarczyć metod:
 
